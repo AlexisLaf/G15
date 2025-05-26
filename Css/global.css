@@ -1,0 +1,57 @@
+body {
+    font-family: "Clash Grotesk", sans-serif;
+    background-color: rgb(68, 163, 68);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+/* ========================================== HEADER ========================================== */
+
+header{
+    background-color: #A27035;
+    position: sticky;
+    top:-30vh;
+    z-index: 100;
+    height: 40%;
+}
+
+header:hover{
+    top:0px !important;
+}
+
+.navspan{
+    display: inline-flexbox;
+    padding: 10px;
+    min-width: 10%;
+}
+
+.navspan ul{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.navspan:hover ul{
+    display: block;
+    z-index: 10;
+}
+
+#nav{
+    justify-content: space-evenly;
+    display: flex;
+    position: static;
+}
+
+#logo {
+    height: 70px;
+}
+
+#Title {
+    text-align: center;
+    justify-self: center;
+    font-size: larger;
+}

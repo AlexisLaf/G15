@@ -1,0 +1,143 @@
+/* ========================================== FACE ========================================== */
+
+.center-container {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.face-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.face-container div {
+    position: absolute;
+    justify-content: center;
+}
+
+.face-container div img {
+    height: 30%;
+    width: 30%;
+}
+
+.face-container .face {
+    z-index: 7;
+}
+
+.face-container .eye {
+    z-index: 6;
+}
+
+.face-container #left-eye {
+    transform: translate(-11%, 8%);
+}
+
+.face-container #right-eye {
+    transform: translate(11%, 8%);
+}
+
+.face-container .eye-background {
+    z-index: 5;
+}
+
+.face-container #left-eye-background {
+    transform: translate(-11%, 8%);
+}
+
+.face-container #right-eye-background {
+    transform: translate(11%, 8%);
+}
+
+/* ========================================== TRIANGLES ========================================== */
+
+.top {
+    width: 100%;
+    height: 100%;
+}
+.bottom {
+    padding-top: 50vh;
+    padding-bottom: 30%;
+    width: 100%;
+    height: 100%;
+}
+
+.triangle {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+}
+
+.triangle img {
+    width: 100%;
+    height: 100%;
+}
+
+.t1 {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.t2 {
+    overflow: hidden;
+    transform: skewX(-55deg);
+    float: right;
+    right: -.25em;
+    transform-origin: 0 100%;
+    width: 50%;
+    z-index: 2;
+}
+.t2 img {
+    transform: skewX(55deg);
+    transform-origin: inherit;
+}
+
+.t3 {
+    overflow: hidden;
+    transform: skewX(55deg);
+    float: left;
+    left: -.25em;
+    transform-origin: 0 100%;
+    width: 50%;
+    z-index: 2;
+}
+.t3 img {
+    transform: skewX(-55deg);
+    transform-origin: inherit;
+}
+
+.t4 {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.t5 {
+    overflow: hidden;
+    transform: skewX(55deg);
+    float: right;
+    right: -.25em;
+    transform-origin: 100% 0;
+    width: 50%;
+    z-index: 2;
+}
+.t5 img {
+    transform: skewX(-55deg);
+    transform-origin: inherit;
+}
+
+.t6 {
+    overflow: hidden;
+    transform: skewX(-55deg);
+    float: left;
+    left: -.25em;
+    transform-origin: 100% 0;
+    width: 50%;
+    z-index: 2;
+}
+.t6 img {
+    transform: skewX(55deg);
+    transform-origin: inherit;
+}

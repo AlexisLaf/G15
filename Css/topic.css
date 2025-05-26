@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    margin: 0px;
+}
+
+.slider-left{
+    position: relative;
+    background-color: aliceblue;
+    width: 100%;
+    left: -90%;
+}
+
+.slider-left:hover{
+    left: 0%;
+    /* To animate the sliding thing*/
+}
+
+.slider-right{
+    position: relative;
+    background-color: aliceblue;
+    width: 100%;
+    right: -90%;
+}
+
+.slider-right:hover{
+    right: 0%;
+    /* To animate the sliding thing*/
+}
+
+.slider-box{
+    background-color: antiquewhite;
+}
+
+.slider-right > .Preview{
+    position:absolute;
+    top:49%;
+}
+
+.slider-right:hover > .Preview{
+    display: none;
+}
+
+.slider-left > .Preview{
+    right: 0px;
+    position:absolute;
+    top:49%;
+}
+
+.slider-left:hover > .Preview{
+    display: none;
+}

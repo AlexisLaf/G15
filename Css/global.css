@@ -5,7 +5,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    overflow-x: hidden;
 }
 
 /* ========================================== HEADER ========================================== */
@@ -23,9 +22,9 @@ header:hover{
 }
 
 .navspan{
-    display: inline-flexbox;
     padding: 10px;
     min-width: 10%;
+    display: inline-block;
 }
 
 .navspan ul{
@@ -42,8 +41,8 @@ header:hover{
 
 #nav{
     justify-content: space-evenly;
+    flex-flow: row wrap;
     display: flex;
-    position: static;
 }
 
 #logo {

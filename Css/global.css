@@ -54,3 +54,20 @@ header:hover{
     justify-self: center;
     font-size: larger;
 }
+
+/* ========================================== FOOTER ========================================== */
+
+footer{
+    padding: 20px;
+    background-color: color-mix(in srgb, darkorange 30%,springgreen 50%);
+}
+
+footer nav {
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row;
+}
+
+footer span{
+    float: left;
+}

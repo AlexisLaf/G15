@@ -1,3 +1,4 @@
+
 body {
     font-family: "Clash Grotesk", sans-serif;
     background-color: rgb(68, 163, 68);
@@ -5,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    overflow-x: hidden;
 }
 
 /* ========================================== HEADER ========================================== */
@@ -59,15 +61,28 @@ header:hover{
 
 footer{
     padding: 20px;
+    margin: 30px;
     background-color: color-mix(in srgb, darkorange 30%,springgreen 50%);
+    text-align: center;
 }
 
 footer nav {
-    justify-content: space-around;
-    display: flex;
+    margin: 5px;
+    width: 50%;
+    justify-content: space-between;
+    display: inline-flex;
     flex-flow: row;
 }
 
 footer span{
     float: left;
+}
+
+.divide{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.divide .footpart{
+    width: 50%;    
 }

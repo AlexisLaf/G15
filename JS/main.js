@@ -15,7 +15,7 @@ var lBg  = document.getElementById("left-eye-background");
 // ======================================================================== EYES ======================================================================== //
 
 // Detecting when the character moves its eyes (when mouse moves).
-document.getElementById("face-container").addEventListener("mousemove", event => MoveEyes(event));
+document.addEventListener("mousemove", event => MoveEyes(event));
 
 // Function to move the eyes of the character.
 function MoveEyes(event)
@@ -64,11 +64,12 @@ function getOffset(element)
 // Detects when to recenter the face : when the screen is resized OR when the page is first loaded.
 addEventListener("resize", CenterFace,);
 //Timeout is to make sure that the images have loaded, at least the size should be set right.
-window.addEventListener("DOMContentLoaded", setTimeout(CenterFace,0));
+window.addEventListener("DOMContentLoaded", e =>{setTimeout(CenterFace,100)});
 
 // Function to center the face (please help this is an ordeal).
 function CenterFace()
 {
+	console.log("Called")
     face.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";
     rEye.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";
     rBg.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";

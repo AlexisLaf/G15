@@ -62,13 +62,13 @@ function getOffset(element)
 // ======================================================================== CENTER FACE ======================================================================== //
 
 // Detects when to recenter the face : when the screen is resized OR when the page is first loaded.
-addEventListener("resize", CenterFace);
-window.addEventListener("DOMContentLoaded", CenterFace);
+addEventListener("resize", CenterFace,);
+//Timeout is to make sure that the images have loaded, at least the size should be set right.
+window.addEventListener("DOMContentLoaded", setTimeout(CenterFace,0));
 
 // Function to center the face (please help this is an ordeal).
 function CenterFace()
 {
-	console.log((topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px")
     face.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";
     rEye.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";
     rBg.style.marginTop = (topTriangles.clientHeight - 0.5 * img_face.clientHeight) + "px";

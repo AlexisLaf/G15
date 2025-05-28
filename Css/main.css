@@ -140,3 +140,8 @@
     transform: skewX(55deg);
     transform-origin: inherit;
 }
+
+a.transparent{
+    opacity: 0;
+    z-index: 15;
+}

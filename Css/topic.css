@@ -10,7 +10,7 @@ body{
     left: -90%;
 }
 
-.slider-left:hover{
+.slider-left:hover,.slider-left:focus{
     left: 0%;
     /* To animate the sliding thing*/
 }
@@ -22,7 +22,7 @@ body{
     right: -90%;
 }
 
-.slider-right:hover{
+.slider-right:hover,.slider-right:focus{
     right: 0%;
     /* To animate the sliding thing*/
 }
@@ -36,7 +36,7 @@ body{
     top:49%;
 }
 
-.slider-right:hover > .Preview{
+.slider-right:hover > .Preview,.slider-right:focus> .Preview{
     display: none;
 }
 
@@ -46,6 +46,6 @@ body{
     top:49%;
 }
 
-.slider-left:hover > .Preview{
+.slider-left:hover > .Preview,.slider-left:focus> .Preview{
     display: none;
 }

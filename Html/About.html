@@ -2,10 +2,11 @@
 <head>
     <title>About | Goal 15: To help life on land</title>
     <link rel="icon" type="image/x-icon" href="../Img/logo.png">
-    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/about.css">
     <link rel="stylesheet" href="../Css/global.css">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#attribute_is_not_set_default_an_empty_string_or_a_javascript_mime_type-->
     <script src="../JS/header.js"> </script>
+    <script src="../JS/about.js" defer> </script>
 </head>
 <body>
     <header>
@@ -67,7 +68,27 @@
         </nav>
     </header>
     
-
+    <div class="selector">
+        You can select who's profile you want to see:
+        <input type="checkbox" id="leandrecheck" checked="true"><label for="leandrecheck"><img class="small-img" src="../Img/Leandre.png"></label>
+        <input type="checkbox" id="alexischeck"><label for="alexischeck"><img class="small-img" src="../Img/Alexis.png"></label>
+    </div>
+    <div class="presentation">
+        <span class="individual" id="Leandre" tabindex="-1">
+            <img src="../Img/Leandre.png">
+            <p>
+                Hello, I am...
+            </p>
+        </span>
+        <span class="individual" id="Alexis" tabindex="-1">
+            <img src="../Img/Alexis.png">
+            <p>
+                Text about me.
+            </p>
+        </span>
+        <label for="alexischeck" id="labelright"><img src="../Img/Button.png" class="Button butright" onclick="animationright()"></label>
+        <label for="alexischeck" id="labelleft"><img src="../Img/Button.png" class="Button butleft" onclick="animationleft()"></label>
+    </div>
 
     <footer>
         <div class="divide">

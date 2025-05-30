@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+}
+
+.small-img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+.presentation .individual img{
+    border-radius: 50%;
+    height: 25vw;
+    width: 25vw;
+}
+
+.presentation .individual{
+    width: 100%;
+    opacity: 0;
+    display: block;
+    position: relative;
+    height: 25rem;
+    z-index: 0;
+}
+
+/*This one is needed to make the 2 div overlap themselves. (with the height higher)*/
+.presentation #Alexis{
+    margin-top: -25rem;
+}
+
+
+.presentation .Button{
+    width: 10%;
+    margin-top:-20em;
+    position: relative;
+    z-index: 5;
+}
+
+.butright{
+    float:right;
+    transform: scaleX(-1);
+}
+
+.butleft{
+    float: left;
+}
+
+[type="checkbox"]{
+    display: none;
+}

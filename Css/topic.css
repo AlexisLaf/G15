@@ -12,6 +12,7 @@ body{
 
 .slider-left:hover,.slider-left:focus{
     left: 0%;
+    outline: none;
     /* To animate the sliding thing*/
 }
 
@@ -24,6 +25,7 @@ body{
 
 .slider-right:hover,.slider-right:focus{
     right: 0%;
+    outline: none;
     /* To animate the sliding thing*/
 }
 

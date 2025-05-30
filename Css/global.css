@@ -1,6 +1,5 @@
 html{
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     padding: 0;
     border: 0;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 /* ========================================== HEADER ========================================== */
@@ -21,6 +21,7 @@ header{
     top:-30vh;
     z-index: 100;
     height: 40%;
+    width: 100%;
 }
 
 header:hover{

@@ -7,15 +7,18 @@ individualleandre=document.getElementById("Leandre");
 btnright=document.getElementById("labelright");
 btnleft=document.getElementById("labelleft");
 
+var middle;
+var outside;
+
+
 alexischeck.addEventListener("change",checkalexis);
 leandrecheck.addEventListener("change",checkleandre);
 
-window.addEventListener("DOMContentLoaded", e =>{setTimeout(showpage("Leandre"),100)});
+window.addEventListener("DOMContentLoaded", e =>{showpage("Leandre")});
 
 function checkalexis(){
     alexischeck.checked=true;
     leandrecheck.checked=false;
-    showpage("Alexis");
     btnright.htmlFor="leandrecheck";
     btnleft.htmlFor="leandrecheck";
 }
@@ -23,13 +26,12 @@ function checkalexis(){
 function checkleandre(){
     leandrecheck.checked=true;
     alexischeck.checked=false;
-    showpage("Leandre");
     btnright.htmlFor="alexischeck";
     btnleft.htmlFor="alexischeck";
 }
 
 function check(){
-    if (alexischeck.checked){
+    if (leandrecheck.checked){
         showpage("Leandre");
     } else {
         showpage("Alexis");
@@ -40,16 +42,52 @@ function showpage(page){
     if (page=="Leandre"){
         individualleandre.style.opacity=100;
         individualalexis.style.opacity=0;
+        middle=individualleandre;
+        outside=individualalexis;
     } else {
         individualleandre.style.opacity=0;
         individualalexis.style.opacity=100;
+        middle=individualalexis;
+        outside=individualleandre;
     }
 }
 
 function animationright(){
-    //Not implemented Yet
+    outside.style.marginLeft="-100vw";
+    outside.style.opacity=100;
+
+    for (let i=10;i<=100;i+=1){
+        setTimeout(function(){
+            outside.style.marginLeft= (-100+i)+"vw";
+            middle.style.marginLeft=(i)+"vw";
+        },i*10)
+    }
+    setTimeout(function(){
+        middle.style.marginLeft=0;
+        middle.style.opacity=0;
+
+        tmp=outside;
+        outside=middle;
+        middle=tmp;
+    },1100);
 }
 
 function animationleft(){
-    //Not implemented Yet
+    outside.style.marginLeft="100vw";
+    outside.style.opacity=100;
+
+    for (let i=10;i<=100;i+=1){
+        setTimeout(function(){
+            outside.style.marginLeft= (100-i)+"vw";
+            middle.style.marginLeft=(-i)+"vw";
+        },i*10)
+    }
+    setTimeout(function(){
+        middle.style.marginLeft=0;
+        middle.style.opacity=0;
+
+        tmp=outside;
+        outside=middle;
+        middle=tmp;
+    },1100)
 }

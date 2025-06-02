@@ -70,7 +70,7 @@
         </nav>
     </header>
     
-    <form>
+    <form id="contact" >
         <div class="by2block">
             <span>
                 Name :
@@ -96,7 +96,11 @@
         <input type="file" id="Attachements" name="attachements" >
         <br>Your satisfaction with this form:  <output for="satisfaction" id="satisfactionresult"></output><br>
         <input type="range" value="5" min="0" max="5" id="Satisfaction" name="satisfaction" >
-        <br><button id="Submit" >Submit</button>
+        <br><button type="submit" id="Submit">Submit</button>
+
+        <div class="center-box">
+            <output id="response" for="contact"></output>
+        </div>
     </form>
 
     <footer>

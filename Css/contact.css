@@ -71,3 +71,32 @@ button{
     padding: 1em;
     /*To add more styling*/
 }
+
+form .response{
+	display: block;
+	padding: 2em;
+}
+
+.inline *{
+	display: inline;
+}
+
+output h6{
+	font-size: smaller;
+	font-weight: lighter;
+}
+
+.center-box{
+	display: flex;
+	justify-content: center;
+}
+
+#response{
+	margin:1em;
+	display: block;
+	text-align: center;
+	justify-content: center;
+	width: fit-content;
+	background-color:rgb(30, 160, 91);
+	border: 0.5em solid black;
+}

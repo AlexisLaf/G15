@@ -69,11 +69,11 @@ header:hover{
     text-align: center;
 }
 
-.navspan ul a li {
+.navspan ul li {
     padding-left: 20px;
     padding-right: 20px;
 }
-.navspan ul a li:hover {
+.navspan ul li:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 

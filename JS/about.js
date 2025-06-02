@@ -32,7 +32,7 @@ function checkleandre(){
 }
 
 function check(){
-    if (moving){return;}
+    if (moving) { return; }
     if (leandrecheck.checked){
         showpage("Leandre");
     } else {
@@ -42,8 +42,8 @@ function check(){
 
 function showpage(page){
     if (page=="Leandre"){
-        individualleandre.style.opacity=100;
-        individualalexis.style.opacity=0;
+        individualleandre.style.opacity = 100;
+        individualalexis.style.opacity = 0;
         middle=individualleandre;
         outside=individualalexis;
     } else {
@@ -55,49 +55,73 @@ function showpage(page){
 }
 
 function animationright(){
-    if (moving){return;}
-    outside.style.marginLeft="-100vw";
-    outside.style.opacity=100;
+    if (moving) {return;}
+    outside.style.marginLeft = "-100%";
+    outside.style.opacity = 100;
     moving=true;
 
-    for (let i=10;i<=100;i+=1){
+    for (let i = 10; i <= 110; i += 1){
         setTimeout(function(){
-            outside.style.marginLeft= (-100+i)+"vw";
-            middle.style.marginLeft=(i)+"vw";
-        },i*10)
+            outside.style.marginLeft = (i - 100) + "%";
+            middle.style.marginLeft = i + "%";
+        }, i*10);
     }
     setTimeout(function(){
-        middle.style.marginLeft=0;
-        middle.style.opacity=0;
-
         tmp=outside;
         outside=middle;
         middle=tmp;
 
+        outside.style.opacity = 0;
+        outside.style.marginLeft = "10%";
+
         moving=false;
-    },1100);
+    }, 1100);
 }
 
 function animationleft(){
-    if (moving){return;}
-    outside.style.marginLeft="100vw";
-    outside.style.opacity=100;
+    if (moving) {return;}
+    outside.style.marginLeft = "100%";
+    outside.style.opacity = 100;
     moving=true;
 
-    for (let i=10;i<=100;i+=1){
+    for (let i = -10; i <= 90; i += 1){
         setTimeout(function(){
-            outside.style.marginLeft= (100-i)+"vw";
-            middle.style.marginLeft=(-i)+"vw";
-        },i*10)
+            outside.style.marginLeft = (100 - i) + "%";
+            middle.style.marginLeft = (-i) + "%";
+        }, i*10);
     }
     setTimeout(function(){
-        middle.style.marginLeft=0;
-        middle.style.opacity=0;
-
         tmp=outside;
         outside=middle;
         middle=tmp;
 
+        outside.style.opacity = 0;
+        outside.style.marginLeft = "10%";
+
         moving=false;
-    },1100)
+    }, 900);
 }
+
+// function animationleft(){
+//     if (moving){return;}
+//     outside.style.marginLeft="100vw";
+//     outside.style.opacity=100;
+//     moving=true;
+
+//     for (let i=10;i<=100;i+=1){
+//         setTimeout(function(){
+//             outside.style.marginLeft= (100-i)+"vw";
+//             middle.style.marginLeft=(-i)+"vw";
+//         },i*10)
+//     }
+//     setTimeout(function(){
+//         middle.style.marginLeft=0;
+//         middle.style.opacity=0;
+
+//         tmp=outside;
+//         outside=middle;
+//         middle=tmp;
+
+//         moving=false;
+//     },1100)
+// }

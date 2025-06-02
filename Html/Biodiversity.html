@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../Css/global.css">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script#attribute_is_not_set_default_an_empty_string_or_a_javascript_mime_type-->
     <script src="../JS/header.js"> </script>
+    <script src="../JS/unstucktopic.js"></script>
 </head>
 <body>
     <header>
@@ -55,7 +56,7 @@
                     <li><a href="Biodiversity.html#Turtles">Turtles</a></li>
                     <li><a href="Biodiversity.html#Rhinoceros">Rhinoceros</a></li>
                     <li><a href="Biodiversity.html#Tiger">Tiger</a></li>
-                    <li><a href="Biodiversity.html">Etc</a>...</li>
+                    <li><a href="Biodiversity.html#ETC">Etc</a>...</li>
                 </ul>
             </div>
             <div class="navspan" id="Other">
@@ -72,28 +73,28 @@
     <p class="main-description">Biodiversity underpins ecosystem health and resilience, yet it is declining faster than at any time in human history. Species extinction, habitat destruction, and ecosystem degradation threaten food security, health, and livelihoods. Urgent action is needed to halt biodiversity loss, ensuring the sustainability of natural systems that support life on Earth.</p>
     
     <div class="slider-box sb-biodiversity">
-        <section class="slider-left" tabindex="-1">
+        <section class="slider-left" tabindex="-1" id="Turtles">
             <div class="Preview"></div>
             <h4>Turtles</h4>
             <div class="hidden-description">Sea turtles face extinction from plastic pollution, poaching, and habitat loss. Protecting nesting sites and oceans is urgent for their survival and marine ecosystem balance.</div>
         </section>
     </div>
     <div class="slider-box sb-biodiversity">
-        <section class="slider-right" tabindex="-1">
+        <section class="slider-right" tabindex="-1" id="Rhinoceros" onfocus="unstuck()">
             <div class="Preview"></div>
             <h4>Rhinoceros</h4>
             <div class="hidden-description">Rhinos are critically endangered due to illegal poaching for horns. Strong protection laws and anti-trafficking efforts are vital to prevent their extinction.</div>
         </section>
     </div>
     <div class="slider-box sb-biodiversity">
-        <section class="slider-left" tabindex="-1">
+        <section class="slider-left" tabindex="-1" id="Tiger">
             <div class="Preview"></div>
             <h4>Tigers</h4>
             <div class="hidden-description">Tigers are losing their habitats to deforestation and human encroachment. Protecting forests and stopping illegal trade is essential to keep this apex predator alive.</div>
         </section>
     </div>
     <div class="slider-box sb-biodiversity">
-        <section class="slider-right" tabindex="-1">
+        <section class="slider-right" tabindex="-1" id="ETC" onfocus="unstuck()">
             <div class="Preview"></div>
             <h4>Others</h4>
             <div class="hidden-description">From amphibians to pollinators, countless species are disappearing daily. Preserving biodiversity is not just about wildlife — it’s about saving the ecosystems we all depend on.</div>

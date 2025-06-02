@@ -9,6 +9,7 @@ btnleft=document.getElementById("labelleft");
 
 var middle;
 var outside;
+var moving=false;
 
 
 alexischeck.addEventListener("change",checkalexis);
@@ -31,6 +32,7 @@ function checkleandre(){
 }
 
 function check(){
+    if (moving){return;}
     if (leandrecheck.checked){
         showpage("Leandre");
     } else {
@@ -53,8 +55,10 @@ function showpage(page){
 }
 
 function animationright(){
+    if (moving){return;}
     outside.style.marginLeft="-100vw";
     outside.style.opacity=100;
+    moving=true;
 
     for (let i=10;i<=100;i+=1){
         setTimeout(function(){
@@ -69,12 +73,16 @@ function animationright(){
         tmp=outside;
         outside=middle;
         middle=tmp;
+
+        moving=false;
     },1100);
 }
 
 function animationleft(){
+    if (moving){return;}
     outside.style.marginLeft="100vw";
     outside.style.opacity=100;
+    moving=true;
 
     for (let i=10;i<=100;i+=1){
         setTimeout(function(){
@@ -89,5 +97,7 @@ function animationleft(){
         tmp=outside;
         outside=middle;
         middle=tmp;
+
+        moving=false;
     },1100)
 }

@@ -25,12 +25,24 @@ body {
 /* ========================================== HEADER ========================================== */
 
 header{
-    background-color: #A27035;
     position: sticky;
     top:-30vh;
     z-index: 100;
     height: 40%;
     width: 100%;
+}
+header nav {
+    background-color: rgb(45, 100, 45);
+}
+
+header nav .navspan ul li a{
+    display: block;
+    width: 100%;
+}
+
+header .shadow {
+    height: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
 }
 
 header:hover{
@@ -46,13 +58,38 @@ header:hover{
 .navspan ul{
     display: none;
     position: absolute;
-    background-color: aqua;
-    margin: 5px;
+    background-color: rgb(117, 170, 214);
+    border-style: solid;
+    border-color: rgb(27, 71, 109);
+    border-radius: 5px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    line-height: 30px;
+    text-align: center;
+}
+
+.navspan ul a li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navspan ul a li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navspan:hover ul{
     display: block;
     z-index: 10;
+}
+
+.navspan h2 a, .navspan h2 a:visited, .navspan h2 a:focus, .navspan ul a, .navspan ul a:visited, .navspan ul a:focus {
+    text-decoration: none;
+}
+.navspan h2 a, .navspan h2 a:visited, .navspan h2 a:focus {
+    color: rgb(214, 217, 214);
+}
+.navspan ul a, .navspan ul a:visited, .navspan ul a:focus {
+    color: black;
 }
 
 #nav{

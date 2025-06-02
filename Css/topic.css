@@ -9,12 +9,14 @@ body{
     width: 100%;
     left: -90%;
     height: 100%;
+    transition: all 1s;
 }
 
 .slider-left:hover, .slider-left:focus{
     left: 0%;
     outline: none;
     /* To animate the sliding thing*/
+    transition: all 1s;
 }
 
 .hidden-description {
@@ -36,12 +38,14 @@ body{
     width: 100%;
     right: -90%;
     height: 100%;
+    transition: all 1s;
 }
 
 .slider-right:hover, .slider-right:focus{
     right: 0%;
     outline: none;
     /* To animate the sliding thing*/
+    transition: all 1s;
 }
 
 .slider-right .hidden-description {

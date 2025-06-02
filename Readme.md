@@ -1,2 +1,1 @@
-
 Please go visit the site at : https://alexislaf.github.io/G15/Html/main.html

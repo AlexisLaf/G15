@@ -5,32 +5,78 @@ body{
 
 .slider-left{
     position: relative;
-    background-color: aliceblue;
+    background-color: rgba(110, 114, 122, 0.3);
     width: 100%;
     left: -90%;
+    height: 100%;
 }
 
-.slider-left:hover,.slider-left:focus{
+.slider-left:hover, .slider-left:focus{
     left: 0%;
     outline: none;
     /* To animate the sliding thing*/
 }
 
-.slider-right{
-    position: relative;
-    background-color: aliceblue;
-    width: 100%;
-    right: -90%;
+.hidden-description {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.slider-right:hover,.slider-right:focus{
+.slider-left .hidden-description {
+    display: none;
+}
+
+.slider-left:hover .hidden-description, .slider-left:focus .hidden-description {
+    display: block;
+}
+
+.slider-right{
+    position: relative;
+    background-color: rgba(110, 114, 122, 0.3);
+    width: 100%;
+    right: -90%;
+    height: 100%;
+}
+
+.slider-right:hover, .slider-right:focus{
     right: 0%;
     outline: none;
     /* To animate the sliding thing*/
 }
 
+.slider-right .hidden-description {
+    display: none;
+}
+
+.slider-right:hover .hidden-description, .slider-right:focus .hidden-description {
+    display: block;
+}
+
 .slider-box{
-    background-color: antiquewhite;
+    height: 150px;
+}
+
+.sb-freshwater {
+    background-color: rgb(159, 218, 253);
+}
+.sb-forest {
+    background-color: rgb(143, 201, 140);
+}
+.sb-desert {
+    background-color: rgb(212, 202, 124);
+}
+.sb-mountains {
+    background-color: rgb(187, 252, 255);
+}
+.sb-biodiversity {
+    background-color: rgb(253, 159, 196);
+}
+.sb-other {
+    background-color: rgb(229, 189, 174);
+}
+
+.slider-box h4 {
+    padding-top: 40px;
 }
 
 .slider-right > .Preview{

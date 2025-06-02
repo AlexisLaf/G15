@@ -13,6 +13,15 @@ body {
     overflow-y: scroll;
 }
 
+.main-titles {
+    text-align: center;
+}
+
+.main-description {
+    text-align: center;
+    padding-left: 50px;
+}
+
 /* ========================================== HEADER ========================================== */
 
 header{
